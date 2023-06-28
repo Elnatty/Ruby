@@ -24,7 +24,7 @@ puts over_five?
 
 =end
 def welcome
-  puts "Hello World"
+  return "Hello World"
 end
 
 # function/methods names can have the "?" which is normally used to return boolean values for esting purposes.
@@ -33,7 +33,11 @@ def over_five?
   value > 5 ? true : false
 end
 puts over_five?
-welcome
+puts welcome
+
+# we can also use alias on methods/functions names.
+alias wel welcome
+puts "calling alias: #{wel}"
 
 # Note: in order to make these functions/methods available to the "irb" terminal:
 # 1. type puts $LOAD_PATH in irb to get ruby path.
