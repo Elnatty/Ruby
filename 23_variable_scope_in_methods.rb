@@ -1,4 +1,20 @@
+=begin
+
+- Local Variable.
+- Global Variable.
+- Instance Variable.
+- Class Variable.
+
+Note: You can verify the scope of a variable by using the "defined" keyword beside the variable name. ie,
+$value = 7
+puts defined? $value # outputs gloal-variable.
+
+=end
+
+
+
 $value = 7 # Global variable is available globally.
+puts defined? $value
 @arr = ['boy', 'girl', 'man', 'woman'] # Instance variable is also available globally.
 
 def welcome
