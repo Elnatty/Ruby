@@ -2,6 +2,10 @@
 
 Class attributes use the "Class Variable" @@variable
 
+We can access the class attributes in "irb" terminal by:
+load 'scrpt_name.rb'
+Then all the Class Attributes becomes available for use.
+
 =end
 
 class Animal

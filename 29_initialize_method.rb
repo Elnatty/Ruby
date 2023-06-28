@@ -4,6 +4,10 @@ The Initialize Method is just like the "def __init__(self)" in python. It is use
 
 Note: Once the initialize method is defined, we are able to access the "attr_reader" values automatically.
 
+Note:
+- attr_accessor is same as attr :name,true # both can be used for setter/getter.
+- attr_reader is same as attr # both are getters.
+
 =end
 
 class Animal
@@ -15,10 +19,10 @@ class Animal
     @name = name
     @legs = legs
     @arms = arms
-    puts "The initialize method has been called.."
+    # puts "The initialize method has been called.."
   end
 
 end
 
 x = Animal.new("Dking") # this alone executes the initialize method.
-puts "My name is #{x.name}, with #{x.legs} legs"
+puts "My name is #{x.name}, with #{x.legs} legs and #{x.arms} arms."

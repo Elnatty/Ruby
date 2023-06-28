@@ -11,6 +11,8 @@ puts "Script name:\t\t#{$0}"
 
 # prints the command line arguments in array format. 1st argument is $*[0]
 puts "arguments:\t\t#{$*}"
+# or we can use ARGV to print arguments.
+puts ARGV
 
 #reads a line and prints it.
 puts "write something:\t\t"
