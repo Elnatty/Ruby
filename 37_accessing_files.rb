@@ -43,7 +43,4 @@ File Pointers
 We use ".pos" to print current pointer position or ".pos = 0" to reset the position back to the beginning of the file.
 
 =end
-# loop through the entire file.
-File.open("file1.txt", 'r') do |file|
-  file.each_line {|line| puts line}
-end
+
